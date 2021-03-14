@@ -1,0 +1,21 @@
+> dat = c(4.1, 15.2, 14.3, 3.1, 25.8, 9.6, 4.1, 14.7, 4.9, 8.7)
+> n = length(dat)
+> store_reciprocal_mean = rep(NA,10000)
+
+> for (i in 1:10000){
+    + resample = sample(dat, size = n, replace = TRUE)
+    + store_reciprocal_mean[i] = 1/mean(resample)
+    + }
+
+> hist(store_reciprocal_mean, n = 40)
+> lower = quantile(store_reciprocal_mean, 0.025)
+> upper = quantile(store_reciprocal_mean, 0.975)
+
+> cat("(", lower, ",", upper, ")\n")
+( 0.06756757 , 0.1517451 )
+
+> sd(store_reciprocal_mean)
+[1] 0.02161504
+
+> mean(store_reciprocal_mean)
+[1] 0.1002935
