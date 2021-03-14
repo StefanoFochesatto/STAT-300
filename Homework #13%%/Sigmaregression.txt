@@ -1,6 +1,0 @@
-> Point_Estimates = slope*x + intercept
-
-> SSE = sum((y - Point_Estimates)^2)
-
-> sigma = sqrt(SSE/(length(y) - 1))
-    [1] 5.049835

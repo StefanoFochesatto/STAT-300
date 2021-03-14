@@ -1,2 +1,0 @@
-    reg_1 = fitlm(x_1, y_1);
-    reg_2 = fitlm(x_2, y_2);

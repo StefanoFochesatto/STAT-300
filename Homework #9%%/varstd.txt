@@ -1,4 +1,0 @@
-> var(x)/length(x) + var(y)/length(y)
-[1] 0.3233635
-> sqrt(var(x)/length(x) + var(y)/length(y))
-[1] 0.5686506

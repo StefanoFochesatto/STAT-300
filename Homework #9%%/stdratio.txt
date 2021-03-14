@@ -1,2 +1,0 @@
-> sqrt(var(x))/sqrt(var(y))
-[1] 0.7887133
