@@ -1,0 +1,19 @@
+> x = c(5, 12, 14, 17, 23, 30, 40, 47, 55, 67, 72, 81, 96, 112, 127)
+> y = c(4, 10, 13, 15, 15, 25, 27, 46, 38, 46, 53, 70, 82, 99, 100)
+
+
+> x_mean = mean(x)
+> y_mean = mean(y)
+
+> Diff_x = x - x_mean
+> Diff_y = y - y_mean
+
+> Numerator = Diff_x*Diff_y
+
+> Denominator = Diff_x*Diff_x
+
+> slope = sum(Numerator)/sum(Denominator)
+    [1] 0.8269731
+
+> intercept = mean(y) - slope*mean(x)
+    [1] -1.128305
